@@ -201,3 +201,16 @@ const expenseReport = [
     1769,
 ];
 
+const sumFinder = () => {
+    for (i = 0; i < expenseReport.length; i++) {
+        for (x = i; x < expenseReport.length; x++) {
+            for (y = x; y < expenseReport.length; y++) {
+                if (expenseReport[i] + expenseReport[x] + expenseReport[y] === 2020)
+                sum = expenseReport[i] * expenseReport[x] * expenseReport[y];
+            }
+        }
+    }
+    return (sum);
+}
+
+console.log(sumFinder())
